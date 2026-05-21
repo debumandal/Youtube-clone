@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding-bottom: 1000px;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+}
+
+@media (min-width: 1000.1px) {
+  body {
+    margin-left: 168px;
+  }
+}

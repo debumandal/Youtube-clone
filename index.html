@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/video.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/side-bar.css" />
+  </head>
+  <body>
+    <!-- HEADER ZONE -->
+    <header class="header">
+      <div class="left-section">
+        <button class="hamburger-menu">
+          <img
+            class="hamburger-menu-icon"
+            src="./Icons/hamburger-menu.svg"
+            alt="hamburger menu icon"
+          />
+        </button>
+        <div class="youtube-logo">
+          <a target="_blank" href="https://www.youtube.com/"
+            ><img
+              class="youtube-logo-icon"
+              src="./Icons/youtube-logo.svg"
+              alt="youtube logo icon"
+          /></a>
+        </div>
+      </div>
+      <form class="middle-section" role="search">
+        <div class="search-bar">
+          <input class="search-input" type="search" placeholder="Search" />
+        </div>
+        <button type="submit" class="youtube-search">
+          <img
+            class="youtube-search-icon"
+            src="./Icons/search.svg"
+            alt="YouTube Search Icon"
+          />
+          <div class="tool-tip">Search</div>
+        </button>
+        <button type="button" class="youtube-voice-search">
+          <img
+            class="voice-search-icon"
+            src="./Icons/voice-search-icon.svg"
+            alt="Voice Search Icon"
+          />
+          <div class="tool-tip">Search with your voice</div>
+        </button>
+      </form>
+
+      <div class="right-section">
+        <button class="youtube-upload" aria-label="Create">
+          <img
+            class="youtube-upload-icon"
+            src="./Icons/upload.svg"
+            alt="Youtube Upload Icon"
+          />
+          <div class="tool-tip">Create</div>
+        </button>
+        <button class="youtube-apps" aria-label="YouTube Apps">
+          <img
+            class="youtube-apps-icon"
+            src="./Icons/youtube-apps.svg"
+            alt="Youtube Apps Icon"
+          />
+          <div class="tool-tip">YouTube apps</div>
+        </button>
+        <button class="youtube-notifications" aria-label="Notification">
+          <img
+            class="youtube-notification-icon"
+            src="./Icons/notifications.svg"
+            alt="Youtube Upload Icon"
+          />
+          <div class="notifications-count">3</div>
+          <div class="tool-tip">Notifications</div>
+        </button>
+        <a
+          href="#my-channel"
+          class="my-youtube-channel"
+          aria-label="My Channel"
+        >
+          <img
+            class="my-youtube-channel-icon"
+            src="./Images/Channels images/my-channel.jpeg"
+            alt="Youtube Channel Icon"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- NAVIGATION ZONE -->
+    <nav class="side-bar" aria-label="Main Navigation">
+      <ul class="nav-bullet-point">
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/home.svg" alt="" />
+            <div class="icon-text">Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/explore.svg" alt="" />
+            <div class="icon-text">Explore</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/subscriptions.svg" alt="" />
+            <div class="icon-text">Subscriptions</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/originals.svg" alt="" />
+            <div class="icon-text">Originals</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/youtube-music.svg" alt="" />
+            <div class="icon-text">YouTube Music</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="side-bar-link">
+            <img src="./Icons/library.svg" alt="" />
+            <div class="icon-text">Library</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="video-grid">
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/thumbnail-1.webp"
+              alt="Marques Brownlee sitting in a studio interviewing Sundar Pichai"
+          /></a>
+
+          <span class="video-time">14:20</span>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a target="_blank" href="https://www.youtube.com/c/mkbhd">
+              <div class="channel-tool-tip">
+                <img
+                  class="profile-picture"
+                  src="./Images/Channels images/channel-1.jpeg"
+                  alt="Marques Brownlee Channel Photo "
+                />
+                <div class="channel-tool-tip-hover">
+                  <div class="hover-channel-picture">
+                    <img
+                      src="./Images/Channels images/channel-1.jpeg"
+                      alt="Marques Brownlee Channel hover Photo"
+                    />
+                  </div>
+                  <div class="hover-channel-video-info">
+                    <p class="hover-channel-name">Marques Brownlee</p>
+                    <p class="hover-channel-subscribers">30M subscribers</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="video-info">
+            <h3 class="video-title">
+              Talking Tech and AI with Google CEO Sunder Pichai!
+            </h3>
+            <p class="channel-name">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/Thumbnail-2.webp"
+              alt="Close-up of Markiplier making a funny, strained face during a challenge"
+          /></a>
+
+          <div class="video-time">8:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/markiplier"
+              ><img
+                class="profile-picture"
+                src="./Images/Channels images/channel-2.jpeg"
+                alt="Markiplier Channel Photo "
+            /></a>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Try Not to Laugh Challenge #9</h3>
+            <p class="channel-name">Markiplier</p>
+            <p class="video-stats">19M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/thumbnail-3.webp"
+              alt="Split screen showing a shocked reaction on one side and a wild TikTok cooking disaster on the other"
+          /></a>
+
+          <div class="video-time">9:13</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/user/SSSniperWolf"
+              ><img
+                class="profile-picture"
+                src="./Images/Channels images/channel-3.jpeg"
+                alt="SSSniperWolf Channel Photo "
+            /></a>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </h3>
+            <p class="channel-name">SSSniperWolf</p>
+            <p class="video-stats">12M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/thumbnail-4.webp"
+              alt="A large chalkboard filled with complex math formulas and a title reading Collatz Conjecture"
+          /></a>
+
+          <div class="video-time">22:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/veritasium"
+              ><img
+                class="profile-picture"
+                src="./Images/Channels images/channel-4.jpeg"
+                alt="veritasium Channel Photo "
+            /></a>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </h3>
+            <p class="channel-name">veritasium</p>
+            <p class="video-stats">18M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/thumbnail-5.webp"
+              alt="Programming IDE screen showing an array block and data structures layout for Kadane's Algorithm"
+          /></a>
+
+          <div class="video-time">11:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/CSDojo"
+              ><img
+                class="profile-picture"
+                src="./Images/Channels images/channel-5.jpeg"
+                alt="CS Dojo Channel Photo "
+            /></a>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </h3>
+            <p class="channel-name">CS Dojo</p>
+            <p class="video-stats">519K views &middot; 5 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="thumbnail-container">
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+            ><img
+              class="thumbnail"
+              src="./Images/Thumbnails images/thumbnail-6.webp"
+              alt="MrBeast standing outdoors in front of a giant red line drawn in a circle on the ground filled with target electronics"
+          /></a>
+
+          <div class="video-time">19:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+              ><img
+                class="profile-picture"
+                src="./Images/Channels images/channel-6.jpeg"
+                alt="MrBeast Channel Photo "
+            /></a>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">
+              Anything You can Fit In The Circle I'II Pay For
+            </h3>
+            <p class="channel-name">MrBeast</p>
+            <p class="video-stats">141M views &middot; 1 years ago</p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
